@@ -63,28 +63,28 @@ export const AutoInsights = () => {
   const getInsightColors = (type: string, impact: string) => {
     const colors = {
       positive: {
-        bg: 'bg-emerald-50 dark:bg-emerald-950/20',
-        border: 'border-emerald-300 dark:border-emerald-700',
-        icon: 'text-emerald-700 dark:text-emerald-300',
-        badge: 'bg-emerald-200 text-emerald-900 dark:bg-emerald-800 dark:text-emerald-200'
+        bg: 'bg-purple-50 dark:bg-purple-950/20',
+        border: 'border-purple-300 dark:border-purple-700',
+        icon: 'text-purple-700 dark:text-purple-300',
+        badge: 'bg-purple-200 text-purple-900 dark:bg-purple-800 dark:text-purple-200'
       },
       negative: {
-        bg: 'bg-rose-50 dark:bg-rose-950/20',
-        border: 'border-rose-300 dark:border-rose-700',
-        icon: 'text-rose-700 dark:text-rose-300',
-        badge: 'bg-rose-200 text-rose-900 dark:bg-rose-800 dark:text-rose-200'
+        bg: 'bg-violet-50 dark:bg-violet-950/20',
+        border: 'border-violet-300 dark:border-violet-700',
+        icon: 'text-violet-700 dark:text-violet-300',
+        badge: 'bg-violet-200 text-violet-900 dark:bg-violet-800 dark:text-violet-200'
       },
       alert: {
-        bg: 'bg-amber-50 dark:bg-amber-950/20',
-        border: 'border-amber-300 dark:border-amber-700',
-        icon: 'text-amber-700 dark:text-amber-300',
-        badge: 'bg-amber-200 text-amber-900 dark:bg-amber-800 dark:text-amber-200'
+        bg: 'bg-indigo-50 dark:bg-indigo-950/20',
+        border: 'border-indigo-300 dark:border-indigo-700',
+        icon: 'text-indigo-700 dark:text-indigo-300',
+        badge: 'bg-indigo-200 text-indigo-900 dark:bg-indigo-800 dark:text-indigo-200'
       },
       opportunity: {
-        bg: 'bg-cyan-50 dark:bg-cyan-950/20',
-        border: 'border-cyan-300 dark:border-cyan-700',
-        icon: 'text-cyan-700 dark:text-cyan-300',
-        badge: 'bg-cyan-200 text-cyan-900 dark:bg-cyan-800 dark:text-cyan-200'
+        bg: 'bg-fuchsia-50 dark:bg-fuchsia-950/20',
+        border: 'border-fuchsia-300 dark:border-fuchsia-700',
+        icon: 'text-fuchsia-700 dark:text-fuchsia-300',
+        badge: 'bg-fuchsia-200 text-fuchsia-900 dark:bg-fuchsia-800 dark:text-fuchsia-200'
       }
     };
     return colors[type as keyof typeof colors] || colors.opportunity;
