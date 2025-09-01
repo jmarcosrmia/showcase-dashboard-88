@@ -25,7 +25,7 @@ export class PDFLayoutManager {
     this.doc.setFontSize(10);
     this.doc.setTextColor(255, 255, 255);
     this.doc.setFont('helvetica', 'bold');
-    this.doc.text(`CODI JEANS — ${reportType} — ${period}`, this.margin, 12);
+    this.doc.text(`AMO OUTLET — ${reportType} — ${period}`, this.margin, 12);
     
     this.currentY = 35;
   }
@@ -40,7 +40,7 @@ export class PDFLayoutManager {
   }
 
   // Metadata section matching reference style
-  addMetadata(period: string, entity: string = 'Codi Jeans Ltda', confidential: string = 'Confidencial — Uso Interno'): void {
+  addMetadata(period: string, entity: string = 'Amo Outlet Ltda', confidential: string = 'Confidencial — Uso Interno'): void {
     this.doc.setFontSize(9);
     this.doc.setTextColor(120, 120, 120);
     this.doc.setFont('helvetica', 'normal');

@@ -227,7 +227,7 @@ export class XMLGenerator {
   </distribuicao_despesas>
   
   <metadados>
-    <sistema>Sistema Financeiro Codi Jeans</sistema>
+    <sistema>Sistema Financeiro Amo Outlet</sistema>
     <versao>2.0</versao>
     <formato>XML</formato>
     <encoding>UTF-8</encoding>

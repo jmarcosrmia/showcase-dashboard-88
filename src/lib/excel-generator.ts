@@ -44,10 +44,10 @@ export class ExcelGenerator {
     // Summary sheet with enhanced formatting
     const summaryData = [
       ['', '', '', '', ''], // Empty row for spacing
-      ['DEMONSTRATIVO DE RESULTADO DO EXERCÍCIO - CODI JEANS'],
+      ['DEMONSTRATIVO DE RESULTADO DO EXERCÍCIO - AMO OUTLET'],
       ['', '', '', '', ''], // Empty row for spacing
       ['Período:', this.getPeriodString(filters)],
-      ['Entidade:', filters.entidade || 'Codi Jeans Ltda'],
+      ['Entidade:', filters.entidade || 'Amo Outlet Ltda'],
       ['Cenário:', filters.cenario || 'Real'],
       ['Gerado em:', new Date().toLocaleDateString('pt-BR') + ' às ' + new Date().toLocaleTimeString('pt-BR')],
       ['', '', '', '', ''], // Empty row for spacing
@@ -107,17 +107,17 @@ export class ExcelGenerator {
       ['Margem Bruta Média', data.margemBruta.value, data.margemBruta.change],
       ['Margem Contribuição', '45.2%', '+2.1pp'],
       ['Margem EBITDA', data.margemEbitda.value, data.margemEbitda.change],
-      ['Produto Mais Rentável', 'Jeans Premium', '52.8%'],
+      ['Produto Mais Rentável', 'Premium', '52.8%'],
       ['Ticket Médio', 'R$ 189,50', '+8.7%'],
       ['Volume Total', '67.3k un', '+12.4%'],
       [''],
       ['ANÁLISE POR PRODUTO'],
       ['Produto', 'Receita', 'Custo Direto', 'Margem Bruta', '% Margem', 'Volume'],
-      ['Calça Jeans Premium', 'R$ 4.590.000', 'R$ 2.204.400', 'R$ 2.385.600', '52.0%', '24.2k un'],
-      ['Jaqueta Jeans', 'R$ 3.315.000', 'R$ 2.155.750', 'R$ 1.159.250', '35.0%', '17.5k un'],
-      ['Bermuda Jeans', 'R$ 2.295.000', 'R$ 1.491.750', 'R$ 803.250', '35.0%', '15.3k un'],
-      ['Saia Jeans', 'R$ 1.530.000', 'R$ 918.000', 'R$ 612.000', '40.0%', '10.2k un'],
-      ['Colete Jeans', 'R$ 1.020.000', 'R$ 663.000', 'R$ 357.000', '35.0%', '6.8k un']
+      ['Calça Premium', 'R$ 4.590.000', 'R$ 2.204.400', 'R$ 2.385.600', '52.0%', '24.2k un'],
+      ['Jaqueta', 'R$ 3.315.000', 'R$ 2.155.750', 'R$ 1.159.250', '35.0%', '17.5k un'],
+      ['Bermuda', 'R$ 2.295.000', 'R$ 1.491.750', 'R$ 803.250', '35.0%', '15.3k un'],
+      ['Saia', 'R$ 1.530.000', 'R$ 918.000', 'R$ 612.000', '40.0%', '10.2k un'],
+      ['Colete', 'R$ 1.020.000', 'R$ 663.000', 'R$ 357.000', '35.0%', '6.8k un']
     ];
 
     const ws = XLSX.utils.aoa_to_sheet(marginData);

@@ -48,7 +48,7 @@ export class TXTGenerator {
     return `
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                                                                              ║
-║           DEMONSTRATIVO DE RESULTADO DO EXERCÍCIO - CODI JEANS               ║
+║           DEMONSTRATIVO DE RESULTADO DO EXERCÍCIO - AMO OUTLET               ║
 ║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
@@ -56,7 +56,7 @@ export class TXTGenerator {
 │ INFORMAÇÕES DO RELATÓRIO                                                     │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ Período........: ${this.getPeriodString(filters).padEnd(60)} │
-│ Entidade.......: ${(filters.entidade || 'Codi Jeans Ltda').padEnd(60)} │
+│ Entidade.......: ${(filters.entidade || 'Amo Outlet Ltda').padEnd(60)} │
 │ Cenário........: ${(filters.cenario || 'Real').padEnd(60)} │
 │ Data de Geração: ${(new Date().toLocaleDateString('pt-BR') + ' às ' + new Date().toLocaleTimeString('pt-BR')).padEnd(60)} │
 └──────────────────────────────────────────────────────────────────────────────┘
@@ -112,7 +112,7 @@ ${data.expenseDistribution.map(item =>
 └──────────────────────────────────────────────────────────────────────────────┘
 
 ══════════════════════════════════════════════════════════════════════════════
-Relatório gerado automaticamente pelo Sistema Financeiro Codi Jeans
+Relatório gerado automaticamente pelo Sistema Financeiro Amo Outlet
 Data: ${new Date().toLocaleDateString('pt-BR')} - Hora: ${new Date().toLocaleTimeString('pt-BR')}
 ══════════════════════════════════════════════════════════════════════════════
 `;
@@ -135,7 +135,7 @@ Gerado em: ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTi
 │ Margem Bruta Média           │ ${data.margemBruta.value.padEnd(15)} │ ${data.margemBruta.change.padEnd(28)} │
 │ Margem Contribuição          │ 45.2%           │ +2.1pp                       │
 │ Margem EBITDA                │ ${data.margemEbitda.value.padEnd(15)} │ ${data.margemEbitda.change.padEnd(28)} │
-│ Produto Mais Rentável        │ Jeans Premium   │ 52.8%                        │
+│ Produto Mais Rentável        │ Premium         │ 52.8%                        │
 │ Ticket Médio                 │ R$ 189,50       │ +8.7%                        │
 │ Volume Total                 │ 67.3k un        │ +12.4%                       │
 └──────────────────────────────┴─────────────────┴──────────────────────────────┘
@@ -145,15 +145,15 @@ Gerado em: ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTi
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ PRODUTO              │ RECEITA      │ CUSTO DIRETO │ MARGEM BRUTA │ % MARGEM │
 ├──────────────────────┼──────────────┼──────────────┼──────────────┼──────────┤
-│ Calça Jeans Premium  │ R$ 4.590.000 │ R$ 2.204.400 │ R$ 2.385.600 │   52.0%  │
-│ Jaqueta Jeans        │ R$ 3.315.000 │ R$ 2.155.750 │ R$ 1.159.250 │   35.0%  │
-│ Bermuda Jeans        │ R$ 2.295.000 │ R$ 1.491.750 │ R$   803.250 │   35.0%  │
-│ Saia Jeans           │ R$ 1.530.000 │ R$   918.000 │ R$   612.000 │   40.0%  │
-│ Colete Jeans         │ R$ 1.020.000 │ R$   663.000 │ R$   357.000 │   35.0%  │
+│ Calça Premium        │ R$ 4.590.000 │ R$ 2.204.400 │ R$ 2.385.600 │   52.0%  │
+│ Jaqueta              │ R$ 3.315.000 │ R$ 2.155.750 │ R$ 1.159.250 │   35.0%  │
+│ Bermuda              │ R$ 2.295.000 │ R$ 1.491.750 │ R$   803.250 │   35.0%  │
+│ Saia                 │ R$ 1.530.000 │ R$   918.000 │ R$   612.000 │   40.0%  │
+│ Colete               │ R$ 1.020.000 │ R$   663.000 │ R$   357.000 │   35.0%  │
 └──────────────────────┴──────────────┴──────────────┴──────────────┴──────────┘
 
 ══════════════════════════════════════════════════════════════════════════════
-Sistema Financeiro Codi Jeans - Análise de Margem
+Sistema Financeiro Amo Outlet - Análise de Margem
 ══════════════════════════════════════════════════════════════════════════════
 `;
   }
@@ -195,7 +195,7 @@ Gerado em: ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTi
 └──────────────────────────────┴─────────────────┴───────────┴──────────────────┘
 
 ══════════════════════════════════════════════════════════════════════════════
-Sistema Financeiro Codi Jeans - Fluxo de Caixa
+Sistema Financeiro Amo Outlet - Fluxo de Caixa
 ══════════════════════════════════════════════════════════════════════════════
 `;
   }
@@ -235,7 +235,7 @@ Gerado em: ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTi
 └──────────────────────────────┴─────────────────┴──────────────┴──────────┴────┘
 
 ══════════════════════════════════════════════════════════════════════════════
-Sistema Financeiro Codi Jeans - Análise de Custos
+Sistema Financeiro Amo Outlet - Análise de Custos
 ══════════════════════════════════════════════════════════════════════════════
 `;
   }
@@ -271,7 +271,7 @@ ${data.trends.map(trend =>
 └──────────────────────────────────────────────────────────────────────────────┘
 
 ══════════════════════════════════════════════════════════════════════════════
-Sistema Financeiro Codi Jeans - Dashboard Executivo
+Sistema Financeiro Amo Outlet - Dashboard Executivo
 ══════════════════════════════════════════════════════════════════════════════
 `;
   }
@@ -311,7 +311,7 @@ Gerado em: ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTi
 └──────────────────────┴─────────┴─────────┴─────────┴─────────┴──────────────┘
 
 ══════════════════════════════════════════════════════════════════════════════
-Sistema Financeiro Codi Jeans - Análise Comparativa
+Sistema Financeiro Amo Outlet - Análise Comparativa
 ══════════════════════════════════════════════════════════════════════════════
 `;
   }
@@ -336,7 +336,7 @@ Gerado em: ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTi
 └──────────────────────────────┴─────────────────┴──────────────────────────────┘
 
 ══════════════════════════════════════════════════════════════════════════════
-Sistema Financeiro Codi Jeans
+Sistema Financeiro Amo Outlet
 ══════════════════════════════════════════════════════════════════════════════
 `;
   }
