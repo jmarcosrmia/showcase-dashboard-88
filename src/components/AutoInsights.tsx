@@ -63,28 +63,28 @@ export const AutoInsights = () => {
   const getInsightColors = (type: string, impact: string) => {
     const colors = {
       positive: {
-        bg: 'bg-green-50 dark:bg-green-950/20',
-        border: 'border-green-200 dark:border-green-800',
-        icon: 'text-green-600 dark:text-green-400',
-        badge: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
+        bg: 'bg-emerald-50 dark:bg-emerald-950/20',
+        border: 'border-emerald-300 dark:border-emerald-700',
+        icon: 'text-emerald-700 dark:text-emerald-300',
+        badge: 'bg-emerald-200 text-emerald-900 dark:bg-emerald-800 dark:text-emerald-200'
       },
       negative: {
-        bg: 'bg-red-50 dark:bg-red-950/20',
-        border: 'border-red-200 dark:border-red-800',
-        icon: 'text-red-600 dark:text-red-400',
-        badge: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300'
+        bg: 'bg-rose-50 dark:bg-rose-950/20',
+        border: 'border-rose-300 dark:border-rose-700',
+        icon: 'text-rose-700 dark:text-rose-300',
+        badge: 'bg-rose-200 text-rose-900 dark:bg-rose-800 dark:text-rose-200'
       },
       alert: {
-        bg: 'bg-yellow-50 dark:bg-yellow-950/20',
-        border: 'border-yellow-200 dark:border-yellow-800',
-        icon: 'text-yellow-600 dark:text-yellow-400',
-        badge: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300'
+        bg: 'bg-amber-50 dark:bg-amber-950/20',
+        border: 'border-amber-300 dark:border-amber-700',
+        icon: 'text-amber-700 dark:text-amber-300',
+        badge: 'bg-amber-200 text-amber-900 dark:bg-amber-800 dark:text-amber-200'
       },
       opportunity: {
-        bg: 'bg-blue-50 dark:bg-blue-950/20',
-        border: 'border-blue-200 dark:border-blue-800',
-        icon: 'text-blue-600 dark:text-blue-400',
-        badge: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300'
+        bg: 'bg-cyan-50 dark:bg-cyan-950/20',
+        border: 'border-cyan-300 dark:border-cyan-700',
+        icon: 'text-cyan-700 dark:text-cyan-300',
+        badge: 'bg-cyan-200 text-cyan-900 dark:bg-cyan-800 dark:text-cyan-200'
       }
     };
     return colors[type as keyof typeof colors] || colors.opportunity;
