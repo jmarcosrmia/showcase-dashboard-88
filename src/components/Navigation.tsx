@@ -19,7 +19,7 @@ export const Navigation = ({ className }: NavigationProps) => {
   const { isMobile } = useResponsive();
 
   return (
-    <header className={`bg-white border-b border-gray-200 px-2 sm:px-4 lg:px-6 py-2 sm:py-3 lg:py-4 ${className} overflow-x-hidden`}>
+    <header className={`bg-white border-b border-gray-200 px-2 sm:px-4 lg:px-6 py-4 sm:py-5 lg:py-6 ${className} overflow-x-hidden`}>
       <div className="flex items-center justify-between gap-2">
         {/* Left section - Logo, Title and Sidebar Toggle */}
         <div className="flex items-center gap-2 sm:gap-4 min-w-0 flex-1">
@@ -30,7 +30,7 @@ export const Navigation = ({ className }: NavigationProps) => {
               <img 
                 src={logoAmoOutlet} 
                 alt="Amo Outlet" 
-                className="h-6 sm:h-8 lg:h-10 w-auto object-contain"
+                className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
               />
             </div>
             <h1 className="text-xs sm:text-sm lg:text-lg font-semibold text-gray-800 truncate">
